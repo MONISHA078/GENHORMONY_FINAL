@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-harmony-bg text-harmony-text antialiased overflow-x-hidden transition-colors duration-200;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0A0F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D2A3A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4C1D95;
+}
+
+/* Dynamic background pattern */
+.bg-gradient-radial {
+  background-image: radial-gradient(var(--tw-gradient-stops));
+}
+
+/* --- LIGHT MODE PREMIUM STYLING OVERRIDES --- */
+.light body,
+.light .bg-harmony-bg {
+  background-color: #F6F5FA !important;
+  color: #1E1B2C !important;
+}
+
+.light aside {
+  background-color: #FFFFFF !important;
+  border-right-color: #EAE8F2 !important;
+}
+
+.light header {
+  background-color: #FFFFFF !important;
+  border-bottom-color: #EAE8F2 !important;
+}
+
+/* Background class mappings */
+.light .bg-\[\#0B0A0F\],
+.light .bg-\[\#0b0a0f\],
+.light .bg-\[\#0e0c14\] {
+  background-color: #F6F5FA !important;
+}
+
+.light .bg-\[\#13111C\],
+.light .bg-\[\#13111c\],
+.light .bg-\[\#1B1926\],
+.light .bg-\[\#1b1926\],
+.light .bg-\[\#181622\] {
+  background-color: #FFFFFF !important;
+}
+
+.light .bg-\[\#191724\],
+.light .bg-\[\#242235\] {
+  background-color: #F6F5FA !important;
+}
+
+/* Background transparency mappings */
+.light .bg-\[\#13111C\]\/85,
+.light .bg-\[\#13111c\]\/85,
+.light .bg-\[\#13111C\]\/65,
+.light .bg-\[\#13111c\]\/65,
+.light .bg-\[\#13111C\]\/55,
+.light .bg-\[\#13111c\]\/55,
+.light .bg-\[\#13111C\]\/40,
+.light .bg-\[\#13111c\]\/40,
+.light .bg-\[\#13111C\]\/60,
+.light .bg-\[\#13111c\]\/60 {
+  background-color: #FFFFFF !important;
+}
+
+.light .bg-\[\#1B1926\]\/30,
+.light .bg-\[\#1B1926\]\/40,
+.light .bg-\[\#1B1926\]\/60,
+.light .bg-\[\#191724\]\/20,
+.light .bg-\[\#191724\]\/30,
+.light .bg-\[\#191724\]\/40,
+.light .bg-\[\#191724\]\/60,
+.light .bg-\[\#191724\]\/70,
+.light .bg-white\/5 {
+  background-color: #F0EDF6 !important;
+}
+
+.light .bg-white\/10 {
+  background-color: #E2DFEB !important;
+}
+
+.light .hover\:bg-white\/5:hover {
+  background-color: #F0EDF6 !important;
+  color: #6D28D9 !important;
+}
+
+/* Harmony-card variable opacity mappings */
+.light .bg-harmony-card,
+.light .bg-harmony-card\/55,
+.light .bg-harmony-card\/40,
+.light .bg-harmony-card\/30,
+.light .bg-harmony-card\/20,
+.light .bg-gradient-to-r {
+  background: #FFFFFF !important;
+  border-color: #EAE8F2 !important;
+}
+
+/* Border and divider class mappings */
+.light .border-white\/5,
+.light .border-white\/10,
+.light .border-white\/20,
+.light .border-\[\#242235\] {
+  border-color: #EAE8F2 !important;
+}
+
+.light .divide-white\/5>* {
+  border-color: #EAE8F2 !important;
+}
+
+/* Inputs styling */
+.light select,
+.light textarea,
+.light input {
+  background-color: #FFFFFF !important;
+  border-color: #D3CFE2 !important;
+  color: #1E1B2C !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+  color: #9B96B0 !important;
+}
+
+/* Text coloring overrides */
+.light .text-slate-100,
+.light .text-gray-100,
+.light .text-gray-200,
+.light .text-gray-300,
+.light .text-white {
+  color: #1E1B2C !important;
+}
+
+.light .text-slate-400,
+.light .text-gray-400,
+.light .text-harmony-muted {
+  color: #6C6684 !important;
+}
+
+/* Global SVG icons */
+.light svg:not(.text-harmony-primary):not(.text-pink-400):not(.text-emerald-400):not(.text-purple-400):not(.text-amber-400):not(.text-blue-400):not(.text-red-400):not(.text-yellow-400):not(.text-pink-500) {
+  color: #6C6684 !important;
+}
+
+/* Specific text highlights */
+.light .text-violet-400 {
+  color: #6D28D9 !important;
+}
+
+.light .text-pink-400 {
+  color: #DB2777 !important;
+}
+
+.light .text-indigo-400 {
+  color: #4F46E5 !important;
+}
+
+/* Alerts */
+.light .bg-red-500\/10 {
+  background-color: #FEE2E2 !important;
+  border-color: #FCA5A5 !important;
+  color: #991B1B !important;
+}
+
+/* Sidebar nav specific links styling */
+.light aside a:not(.bg-harmony-primary) {
+  color: #6C6684 !important;
+}
+
+.light aside a:not(.bg-harmony-primary):hover {
+  background-color: #F0EDF6 !important;
+  color: #6D28D9 !important;
+}
+
+/* Sidebar header specific gradient override */
+.light aside h1 {
+  background: linear-gradient(to right, #6D28D9, #EC4899) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+}
+
+/* Banners text-transparent gradient text mapping */
+.light .from-white {
+  --tw-gradient-from: #6D28D9 !important;
+  --tw-gradient-to: #EC4899 !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+/* Pastel color balance for mood boxes bg */
+.light .bg-violet-950\/20 {
+  background-color: rgba(109, 40, 217, 0.12) !important;
+}
+
+.light .bg-pink-950\/20 {
+  background-color: rgba(236, 72, 153, 0.12) !important;
+}
+
+.light .bg-emerald-950\/20 {
+  background-color: rgba(16, 185, 129, 0.12) !important;
+}
+
+.light .bg-amber-950\/20 {
+  background-color: rgba(245, 158, 11, 0.12) !important;
+}
+
+.light .bg-blue-950\/20 {
+  background-color: rgba(59, 130, 246, 0.12) !important;
+}
+
+.light .bg-red-950\/20 {
+  background-color: rgba(239, 68, 68, 0.12) !important;
+}
+
+/* Donut chart background track balance */
+.light circle[stroke="#1c1a29"] {
+  stroke: #F0EDF6 !important;
+}
+
+/* Global Scrollbar in Light Mode */
+.light ::-webkit-scrollbar-track {
+  background: #F3F4F6 !important;
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background: #D1D5DB !important;
+}
+
+.light ::-webkit-scrollbar-thumb:hover {
+  background: #6D28D9 !important;
+}
